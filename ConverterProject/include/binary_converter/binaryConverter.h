@@ -1,8 +1,8 @@
 #ifndef BINARYCONVERTER_H
 #define BINARYCONVERTER_H
-
+#define BINARY_SIZE 16
 void lanuchBinaryMenu();
-int decimal(int bin);
-void binary(int dec);
+long decimal(const char bin[17]);
+char* binary(long dec);
 
 #endif 
