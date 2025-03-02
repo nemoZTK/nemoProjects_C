@@ -4,5 +4,5 @@ int confirmChoise(const char *messaggio) {
     char conf;
     printf("%s (y/n): ", messaggio);
     scanf(" %c", &conf);
-    return (conf == 'y' || conf == 'Y');
+    return (conf == 'y'||conf=='s' ||conf=='S'|| conf == 'Y');
 }

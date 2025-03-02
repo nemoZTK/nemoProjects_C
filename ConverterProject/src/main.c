@@ -3,6 +3,7 @@
 #include "../include/circuits/circuits.h"
 #include "../include/utils/confirm.h"
 #include "../include/utils/rickRoll.h"
+#include "../include/utils/asci.h"
 #include "../include/languages/ita.h"
 #include <stdio.h>
 
@@ -15,6 +16,7 @@ int main() {
    int sceltaM = -1;
                                                                                                                                                                                                                                                                         
     do {
+        printf("%s\n", ASCII_WELCOME);
         printMainMenu();
         scanf("%d", &sceltaM);
         switch (sceltaM) {
