@@ -1,7 +1,7 @@
 
 #include "../../include/roman_converter/romanConverter.h"
 #include "../../include/utils/confirm.h"
-#include "../../include/utils/rickRoll.h"
+//#include "../../include/utils/rickRoll.h"
 #include <stdio.h>
 #define DIM 300
 int sceltaR = -1,dec;
@@ -38,12 +38,11 @@ void launchRomeMenu(){
                                    "------------sicuro-che-hai-scelto-bene?----------------\n"
                                    "----------------------y-or-n---------------------------\n")==1){ 
                            romanToDecimal(rom);
-                           printf("\n\n\n\tsorry this is not ready yet\n\n\n");
-                           rickRoll();
-                            //printf("---------ok-hai-scelto:-da-romani-a-numeri-------------\n"
-                            //       "-------dimmi-il-numero-romano-da-convertire------------\n");
-                            //scanf("%s",rom);
-                            //printf("--------il-numero-%s-convertito-diventa-%d-------------\n",rom,roma2(rom));       
+
+                            printf("---------ok-hai-scelto:-da-romani-a-numeri-------------\n"
+                                   "-------dimmi-il-numero-romano-da-convertire------------\n");
+                            scanf("%s",rom);
+                            printf("--------il-numero-%s-convertito-diventa-%d-------------\n",rom,romanToDecimal(rom));       
                             }
                             break;
 
